@@ -15,7 +15,7 @@ const products = [
 
     function searchProducts(products,searchText){
         const matched = []
-        for (var product of products){
+        for (const product of products){
             const name = product.name
                 if (name.indexOf(searchText)!= -1){
                     matched.push(product)
@@ -24,5 +24,5 @@ const products = [
         return matched
     }
 
-    var matched = searchProducts(products,'phone')
+    const matched = searchProducts(products,'phone')
     console.log(matched)
